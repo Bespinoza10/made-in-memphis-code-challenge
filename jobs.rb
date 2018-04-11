@@ -6,7 +6,9 @@ def jobs(example)
 end
 
 first_example = "a =>"
-puts jobs(first_example)
+jobs(first_example)
+
+puts ""
 
 second_example = <<j
 a =>
@@ -14,4 +16,21 @@ b =>
 c =>
 j
 
-puts jobs(second_example)
+jobs(second_example)
+
+# third_example = <<j
+# a =>
+# b => c
+# c =>
+# j
+
+# jobs(third_example)
+
+# fourth_example = <<j
+# a =>
+# b => c
+# c => f
+# d => a
+# e => b
+# f =>
+# j
