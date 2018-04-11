@@ -1,9 +1,13 @@
+require 'pry'
+
 def jobs(example)
   if example.empty?
-    example = "empty string"
+    return ""
+  else
+    return example
   end
   puts example
 end
 
-first_example = " Test 2"
-jobs(first_example)
+first_example = "a =>"
+puts jobs(first_example)
